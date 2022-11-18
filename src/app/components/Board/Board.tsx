@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
-import { Cell } from '../../models/Cell';
+import { Board as BoardModel } from '../../models/Board';
 
 interface BoardProps {
-  cells: Cell[];
+  board: BoardModel;
 }
-
-export const Board: FC<BoardProps> = ({ cells }) => {
+export const Board: FC<BoardProps> = ({ board }) => {
+  console.log(board.board);
   return (
     <div>
 

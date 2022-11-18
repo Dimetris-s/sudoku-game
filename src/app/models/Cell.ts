@@ -1,9 +1,9 @@
 type CellState = 'clear' | 'filled' | 'correct' | 'incorrect';
-type CellValue = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
+export type CellValue = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 
 type CellOptions = {
   value: CellValue;
-  state: CellState;
+  state?: CellState;
 }
 
 export class Cell {
@@ -15,7 +15,7 @@ export class Cell {
 
   constructor({ value, state }: CellOptions) {
     this.value = value;
-    this.state = state;
+    this.state = state || 'clear';
   }
 
   public clear() {
