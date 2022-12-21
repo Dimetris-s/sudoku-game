@@ -8,5 +8,5 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <App />
   </React.StrictMode>,
 );
-console.log('123');
-fdsfdsf
+console.log(1);
+console.log(2);
