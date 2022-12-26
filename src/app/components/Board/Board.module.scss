@@ -1,1 +1,14 @@
-.root {}
+.root {
+  border: 1px solid #000;
+  border-radius: 8px;
+  border-collapse: collapse;
+}
+
+.row {}
+
+.cell {
+  border: 1px solid #000;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
